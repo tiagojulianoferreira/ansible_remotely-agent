@@ -2,7 +2,7 @@
 Instala e configura o agente da solução de acesso remoto [Remotely](https://github.com/immense/Remotely)
 
 # Váriaveis
-As seguintes variáveis serão utilizadas na instalação do agente.
+As seguintes variáveis serão utilizadas na instalação do agente(via win_shell).
 
 - **SERVER** - URL do servidor Remotely.(obrigatória)
 - **ORGANIZATION_ID** - disponível no web console do Remotely no menu Organization. (obrigatória)
