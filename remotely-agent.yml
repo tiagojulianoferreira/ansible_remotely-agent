@@ -1,0 +1,9 @@
+- name: Instala Remotely Agent
+  hosts: all
+  vars:
+    SERVER: remoto.example.com
+    ORGANIZATION_ID: 1d780fe3-6b81-4c6c-af50-51eceb4e61bd
+    DEVICE_GROUP: ADM
+  roles:
+    # - remove-remotely
+    - remotely-agent

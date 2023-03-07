@@ -1,0 +1,17 @@
+---
+# tasks file for roles/remove-remotely
+# tasks file for roles/remotely-agent
+- name: Cria C:\temp
+  ansible.windows.win_file:
+    path: C:\temp
+    state: directory
+
+- name: Copia o executável do agente Remotely para hosts alvos
+  win_copy:
+    src: Remotely_Install.exe
+    dest: C:\temp\remotely.exe
+
+- name: REMOVE o agente Remotely em modo silencioso
+  win_shell: '.\remotely.exe -uninstall -quiet' 
+  args:
+    chdir: C:\temp

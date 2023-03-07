@@ -1,0 +1,3 @@
+---
+# defaults file for roles/remotely-agent
+DEVICE_GROUP: None
